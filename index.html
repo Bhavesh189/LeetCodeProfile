@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Dev Profile</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <div id="toast" class="toast"></div>
+
+    <nav>
+        <div class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-code-branch"></i></div>
+            <div class="logo-text">
+                <span class="brand">Bhavesh</span>
+                <small class="sub-brand">developer analytics</small>
+            </div>
+        </div>
+        <button id="dark" class="theme-toggle" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+
+    <div class="full">
+        <div class="search-section">
+            <div class="search-wrapper">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" class="user" placeholder="Enter LeetCode username (e.g., bhavesh1899287)">
+                <div class="focus-border"></div>
+            </div>
+            <button class="sub" id="searchBtn">
+                <span class="btn-text">Analyze</span>
+                <i class="fa-solid fa-arrow-right btn-icon"></i>
+            </button>
+        </div>
+
+        <div class="dashboard" id="dashboard">
+            
+            <div class="card profile-card stagger-1">
+                <div class="avatar-container">
+                    <img src="https://via.placeholder.com/150" class="avatar" alt="User Avatar">
+                    <div class="avatar-ring"></div>
+                </div>
+                <h2 class="name">Username</h2>
+                <p class="username">@username</p>
+                <p class="about">Waiting for user data...</p>
+                
+                <div class="info">
+                    <div class="info-item"><i class="fa-solid fa-ranking-star"></i><span class="ranking">Rank</span></div>
+                    <div class="info-item"><i class="fa-solid fa-location-dot"></i><span class="country">Country</span></div>
+                    <div class="info-item"><i class="fa-solid fa-building"></i><span class="company">Company</span></div>
+                    <div class="info-item"><i class="fa-solid fa-graduation-cap"></i><span class="school">School</span></div>
+                </div>
+                
+                <div class="socials">
+                    <a class="github" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="card contest-card stagger-2">
+                <div class="card-header">
+                    <h2>Contest Analytics</h2>
+                    <i class="fa-solid fa-trophy header-icon"></i>
+                </div>
+                <div class="contest-grid">
+                    <div class="stat-box">
+                        <h3>Rating</h3>
+                        <p class="rating count-up">0</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Global Rank</h3>
+                        <p class="global-rank count-up">0</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Top %</h3>
+                        <p class="top-percentage count-up">0</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Attended</h3>
+                        <p class="attended count-up">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card solved-card stagger-3">
+                <div class="card-header">
+                    <h2>Problem Solving</h2>
+                    <i class="fa-solid fa-brain header-icon"></i>
+                </div>
+                <div class="solved-grid">
+                    <div class="box easy">
+                        <div class="box-bg"></div>
+                        <h3>Easy</h3>
+                        <p class="easySolved count-up">0</p>
+                    </div>
+                    <div class="box medium">
+                        <div class="box-bg"></div>
+                        <h3>Medium</h3>
+                        <p class="mediumSolved count-up">0</p>
+                    </div>
+                    <div class="box hard">
+                        <div class="box-bg"></div>
+                        <h3>Hard</h3>
+                        <p class="hardSolved count-up">0</p>
+                    </div>
+                    <div class="box total">
+                        <div class="box-bg"></div>
+                        <h3>Total</h3>
+                        <p class="totalSolved count-up">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card language-card stagger-4">
+                <div class="card-header">
+                    <h2>Languages</h2>
+                    <i class="fa-solid fa-code header-icon"></i>
+                </div>
+                <div class="languages"></div>
+            </div>
+
+            <div class="card skill-card stagger-5">
+                <div class="card-header">
+                    <h2>Skills</h2>
+                    <i class="fa-solid fa-bolt header-icon"></i>
+                </div>
+                <div class="skills"></div>
+            </div>
+
+            <div class="card submission-card stagger-6">
+                <div class="card-header">
+                    <h2>Recent Accepted</h2>
+                    <i class="fa-solid fa-check-double header-icon"></i>
+                </div>
+                <div class="submissions"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
